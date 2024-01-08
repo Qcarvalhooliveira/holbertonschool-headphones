@@ -6,7 +6,7 @@
 
 * In this project, "Implement a Design from Scratch", the goal is to create a web page entirely from the ground up using only raw HTML and CSS, without relying on any external libraries. This exercise emphasizes applying your knowledge in HTML, CSS, accessibility, and responsive design, with a focus on creative freedom and minimal instruction. The primary objective is to develop a fully functional, responsive web page that perfectly aligns with the provided designer file. It challenges your ability to translate a design concept into a live, user-friendly, and accessible web page, ensuring it matches the original design specifications across various devices and screen sizes.
 
-## **Tasks** :bookmark_tabs:
+## **Tasks** :books:
 
 #### **0. Read and be familiar with Figma**
 
