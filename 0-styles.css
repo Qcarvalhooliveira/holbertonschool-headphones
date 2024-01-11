@@ -35,9 +35,9 @@ header{
 }
 
 .navicon {
-    background: #FFFFFF; /* ou use a variável color-white, se disponível */
+    background: #FFFFFF; 
     display: block;
-    width: 2rem;
+    width: 1.5rem;
     height: 0.2rem;
     position: relative;
     transition: background 0.2s ease-out;
@@ -47,19 +47,20 @@ header{
 .navicon:after {
     content: '';
     display: block;
-    width: 100%;
     height: 100%;
     position: absolute;
-    background: #FFFFFF; /* ou use a variável color-white */
+    background: #FFFFFF;
     transition: all 0.2s ease-out;
 }
 
 .navicon:before {
     top: 0.7rem;
+    width: 1.75rem;
 }
 
 .navicon:after {
     top: -0.7rem;
+    width: 2rem;
 }
 
 
@@ -146,20 +147,16 @@ header{
 }
     
 .menu-toggle {
-    display: none; /* Esconde o checkbox */
+    display: none;
 }
 
 .hamburger-icon {
-    /* Seus estilos existentes para o ícone hamburger */
     cursor: pointer;
 }
 
-.menu-toggle:checked ~ .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Outros estilos para posicionar e estilizar o menu */
-}
+
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -222,8 +219,36 @@ header{
     }
 
     .menu {
-        display: none;
-      
+        display: none;  
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menu-toggle:checked ~ .menu {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 18%;
+        transform: translateX(-50%);
+        
+    }
+    
+    .menu-toggle:checked ~ .hamburger-icon .navicon {
+        background: transparent; 
+        
+    }
+    
+    .menu-toggle:checked ~ .hamburger-icon .navicon:before {
+        transform: rotate(45deg); 
+        top: 0; 
+        width: 2rem;
+    }
+    
+    .menu-toggle:checked ~ .hamburger-icon .navicon:after {
+        transform: rotate(-45deg); 
+        top: 0; 
+        width: 2rem;
     }
 }
 
