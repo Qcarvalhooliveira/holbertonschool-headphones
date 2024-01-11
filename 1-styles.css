@@ -4,7 +4,10 @@
 }
 
 body {
-   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
     background-color: #FFFFFF;
     font-family: 'Source Sans Pro', sans-serif;     
 }
@@ -157,9 +160,8 @@ header{
 }
 
 .work-container {
-    max-width: 1400px;
+    max-width: 1000px;
     max-height: 694px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,7 +175,7 @@ header{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    max-width: 630px;
+    max-width: 637px;
     height: 184px;
     gap: 40px;
  
@@ -184,26 +186,32 @@ header{
     font-weight: 600;
 }
 
+.work-titles p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .work-categories {
-display: flex;
-align-items: center;
-justify-content: center;
-max-width:1002px;
-max-height: 193px;
-gap: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1002px;
+    max-height: 193px;
+    gap: 58px;
+    
 
 
 }
 
 .work-categories-item {
     display: flex;
-align-items: center;
-justify-content: space-between;
-flex-direction: column;
-text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
 
-font-size: 18px;
-height: 193px;
+    font-size: 18px;
+    height: 193px;
 }
 
 .work-categories-item p {
@@ -252,7 +260,9 @@ height: 193px;
 
 
 @media screen and (max-width: 480px) {
-
+    body {
+        width: 480px;
+    }
     .header-main-container {
         min-width: 375px;
         background-position: 35% 80%;
